@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen;
+    jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
+    <meta name="description" content="">
+    <meta name="author" content="Marina Knabbe">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+
+    <title>Moderne Browser Kommunikation</title>
+
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/main.css">
+  </head>
+
+  <body>
+<!-- HEADER ================================================== -->
+    <div class="page-header">
+      <img class="img-responsive" alt="Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logo.png">
+      <h1>Moderne Browser Kommunikation</h1>
+    </div>
+
+<!-- NAVBAR ================================================== -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Navigation ein-/ausblenden</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MBC-Team</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekte<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/index.html">Gaming</a></li>
+                <li><a href="#">Produktivität</a></li>
+                <li><a href="#">Unterhaltung</a></li>
+                <li><a href="#">Sonstiges</a></li>
+              </ul>
+            </li>
+            <li><a href="#ueber">Über</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Carousel ================================================ -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Positionsanzeige -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <!-- Slides 1 -->
+        <div class="item active">
+          <img alt="Erste Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide1.GIF">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Anwendungsname</h2>
+              <p>Beschreibung bla bla bla.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/app1/index.html" role="button">Jetzt ausprobieren</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Slides 2 -->
+        <div class="item">
+          <img alt="Zweite Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide2.GIF" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Noch eine Anwendung</h2>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Jetzt ausprobieren</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Slides 3 -->
+        <div class="item">
+          <img  alt="Dritte Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide3.GIF">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Aller guten Dinge sind drei</h2>
+              <p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Jetzt ausprobieren</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Slides 4 -->
+        <div class="item">
+          <img  alt="Vierte Folie" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/slide4.GIF">
+          <div class="container">
+            <div class="carousel-caption">
+              <h2>Und hier ist die Vier</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Jetzt ausprobieren</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Zurück</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Weiter</span>
+      </a>
+    </div><!-- /.carousel -->
+
+<!-- HOME ==================================================== -->
+    <div class="container home">
+      <div class="row">
+        <!-- Topic 1-->
+        <div class="col-md-3">
+          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconGame.png" alt="gaming icon" width="140" height="140">
+          <h2>Gaming</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="http://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/gaming/index.html" role="button">Alle ansehen &raquo;</a></p>
+        </div>
+        <!-- Topic 2-->
+        <div class="col-md-3">
+          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconProd.png" alt="productivity icon" width="140" height="140">
+          <h2>Produktivität</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">Alle ansehen &raquo;</a></p>
+        </div>
+        <!-- Topic 3-->
+        <div class="col-md-3">
+          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconEntertain.png" alt="entertainment icon" width="140" height="140">
+          <h2>Unterhaltung</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">Alle ansehen &raquo;</a></p>
+        </div>
+        <!-- Topic 4-->
+        <div class="col-md-3">
+          <img class="img-circle" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/iconMisc.png" alt="misc icon" width="140" height="140">
+          <h2>Sonstiges</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">Alle ansehen &raquo;</a></p>
+        </div>
+      </div><!-- /.row -->
+
+      <hr class="featurette-divider">
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right">
+          <img  class="img-responsive" alt="HAW Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logohaw.gif">
+        </p>
+        <p>
+          <img  class="img-responsive" alt="CaDS Logo" src="https://rawgit.com/Transport-Protocol/MBC-CorporateDesign/master/pictures/logoCaDSsmall.jpg">
+        </p>
+      </footer>
+
+    </div><!-- /.container -->
+
+<!-- Bootstrap-JavaScript ==================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="https://rawgit.com/twbs/bootstrap/master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
