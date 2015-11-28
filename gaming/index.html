@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+
+      <!-- socket io ==================================== -->
+      <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      $('form').submit(function(){
+      socket.emit('clicked', $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

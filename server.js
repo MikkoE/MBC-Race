@@ -41,7 +41,7 @@ io.on('connection', function(socket){
   console.log('connected');
 
 
-  socket.on('clicked', function(msg){
+  socket.on('clicked', function(){
     console.log('button clicked');
   });
 
