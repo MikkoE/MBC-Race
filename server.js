@@ -37,12 +37,15 @@ var server = http.listen(3000, function () {
 
 
 ///////////// Sockets ///////////
-io.on('connection', function(socket){
-  console.log('connected');
 
-
-  socket.on('clicked', function(){
-    console.log('button clicked');
-  });
-
+  // Bei eingehender Verbindung
+  io.on('connection', function (socket) {
+    // Direkt Nachricht senden
+    socket.emit('game', {time: new Date(), msg: 'Hello new Client!'});
+    // Bei eingehender Nachricht auf diesem Socket
+    socket.on('game', function (data) {
+      // Nachricht an alle verbundenen Clienten senden
+      //io.sockets.emit('chat', {time: new Date(), text: data.msg});
+      console.log("game start");
+    });
 });
